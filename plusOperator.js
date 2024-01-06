@@ -1,5 +1,5 @@
 // + operator
-console.log(2+3)
+console.log(2+3)    //adds up
 console.log("2"+"3")      //concatenate
 console.log(typeof(2+"3"))      //If string and number even concatenated, the data type is always string
 
