@@ -8,6 +8,7 @@ console.log(typeof(1+2+3+"4"))      //String datatype output even though multipl
 
 
 //NaN
+console.log("a"+"b")     //This just concatenates
 console.log("a" - "b")      //When - or * or / or any other mathematical expression is used with string, it returns NaN (not a number)
 
 console.log("1" - "2")    //output is -1 because JS first tries to convert string into number after that its 1-2
