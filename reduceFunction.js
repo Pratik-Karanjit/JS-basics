@@ -12,3 +12,6 @@ const sum = numbers.reduce((pre, cur) => {
 }, 0); // The '0' is the initial value for the pre
 
 console.log(sum); // Output: 15
+
+
+

@@ -7,5 +7,7 @@ let sum = (...inputs)=> {                   //takes the inputs when the function
     return output
 }
 
-let _sum = sum(1,2,3,4)
-console.log(_sum)
+// let _sum = sum(1,2,3,4)
+// console.log(_sum)
+
+console.log(sum(1,2,3,4))
