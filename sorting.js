@@ -27,3 +27,25 @@ let myArray_ = [5, 4, 3, 2, 1];
 myArray_.sort();
 
 console.log(myArray_);
+
+
+
+//In descending
+let _myArray = [9, 3, 4, 3, 1];
+
+let _output = (inputs) => {
+    return [...inputs].sort((a, b) => b - a); // Sorting in descending order
+}
+
+console.log(_output(_myArray));
+
+
+
+
+//Main array descending order sorting
+
+let mySpace = [7,6,5,4,3]
+mySpace.sort((a,b) => b-a)
+
+
+console.log(mySpace)
