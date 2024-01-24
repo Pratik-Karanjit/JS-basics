@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../../App'
 
 const Child = () => {
+  let value = useContext(Context)
+
   return (
-    <div>Child</div>
+    <div>
+      Child name is {value.name}
+      <br></br>
+      age is {value.age}
+    </div>
   )
 }
 
