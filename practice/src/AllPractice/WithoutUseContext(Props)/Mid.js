@@ -1,6 +1,7 @@
 import React from 'react'
 import Bottom from './Bottom'
 
+// take props
 const Mid = (props) => {
   return (
     <div>
