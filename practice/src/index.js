@@ -1,17 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import ApiUsingAsyncAwait from "./AllPractice/ApiUsingAsyncAwait";
-import ApiUsingFetch from "./AllPractice/ApiUsingFetch";
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
     {/* <ApiUsingAsyncAwait /> */}
-    <ApiUsingFetch />
+    {/* <ApiUsingFetch /> */}
   </React.StrictMode>
 );
 
