@@ -1,18 +1,9 @@
-import React, { useState } from 'react';
+let word = "No lemon, no Melon";
 
-const PalindromeChecker = () => {
-  const [word, setWord] = useState('');
-  const isPalindrome = word.toLowerCase() === word.toLowerCase().split('').reverse().join('');
-
-  return (
-    <div>
-      <label>
-        Enter a word:
-        <input type="text" value={word} onChange={(e) => setWord(e.target.value)} />
-      </label>
-      <p>{isPalindrome ? 'The word is a palindrome!' : 'The word is not a palindrome.'}</p>
-    </div>
-  );
+let checker = (input) => {
+  let replaceWord = input.replace(/[\W_]/g, "");
+  let lowerWord = replaceWord.toLowerCase();
+  let manipulateWord = lowerWord.split("").reverse().join("");
+  return lowerWord === manipulateWord;
 };
-
-export default PalindromeChecker;
+console.log(checker(word));

@@ -8,6 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
+    {/* <PalindromeChecker></PalindromeChecker> */}
     {/* <ApiUsingAsyncAwait /> */}
     {/* <ApiUsingFetch /> */}
   </React.StrictMode>
