@@ -1,0 +1,13 @@
+useContext
+
+useContext is simple and lightweight.
+It's states are only accessible in the component tree.
+It is part of React Hooks.
+Can be straightforwardly used in any React applications without any external installation.
+Used in small to medium sized applications.
+
+Redux
+It is complex and heavy weighted comparatively.
+It is global store for entire application.
+Requires addition setup and packages. (RTK)
+Used in more complex projects.
