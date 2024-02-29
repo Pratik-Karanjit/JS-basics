@@ -9,6 +9,7 @@ const ApiUsingAsyncAwait = () => {
       let response = await axios.get(
         "https://jsonplaceholder.typicode.com/posts"
       );
+      //Extract only 10
       const userIds = response.data
         .slice(0, 10)
         .map((individualPosts) => individualPosts.userId);
