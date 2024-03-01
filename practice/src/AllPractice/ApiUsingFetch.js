@@ -2,12 +2,14 @@
 
 import React from "react";
 
-const ApiUsingAsyncAwait = () => {
+const ApiUsingFetch = () => {
   let ApiCall = async () => {
     try {
       let response = await fetch("https://jsonplaceholder.typicode.com/posts");
-      let data = await response.json();
+      // console.log("this is response", response);
 
+      let data = await response.json();
+      // console.log("this is data", data);
       // Extracting the first 10 userId values
       const userIds = data.slice(0, 10).map((post) => post.userId);
       console.log(userIds);
@@ -29,4 +31,4 @@ const ApiUsingAsyncAwait = () => {
   );
 };
 
-export default ApiUsingAsyncAwait;
+export default ApiUsingFetch;
