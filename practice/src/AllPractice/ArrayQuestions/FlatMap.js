@@ -1,4 +1,5 @@
 //FlatMap is used to flatten array of arrays into a single array.
+//creates one single array from multiple
 let numbers = [
   [1, 2, 3],
   [4, 5, 6],
