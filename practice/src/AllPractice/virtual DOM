@@ -1,0 +1,3 @@
+React and Vue use Virtual DOM
+It is javascript representation of DOM. All the manipulation of the code is done in virtual DOM before reaching the browser.
+This makes the app very fast.
