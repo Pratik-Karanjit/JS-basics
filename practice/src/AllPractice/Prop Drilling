@@ -1,0 +1,2 @@
+Passing props from parent to child even if the component does not require the data.
+This is a huge problem in React for which we use Redux for global state management.
