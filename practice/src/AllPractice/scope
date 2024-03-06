@@ -1,0 +1,5 @@
+// var has function level scope.
+
+// let and const have block level scope.
+
+//const values cannot be reinitialized.
