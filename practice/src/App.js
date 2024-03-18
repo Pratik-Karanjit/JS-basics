@@ -3,6 +3,7 @@ import Parent from "./AllPractice/LearnUseContext/Parent";
 import Child from "./AllPractice/LearnUseContext/Child";
 import Top from "./AllPractice/WithoutUseContext(Props)/Top";
 import ApiUsingFetch from "./AllPractice/ApiUsingFetch";
+import LearnTypeScript from "../src/TypeScript/LearnTypeScript.tsx";
 
 //Context for storing
 export let Context = createContext();
@@ -28,6 +29,11 @@ const App = () => {
       </Context.Provider>
       <Top></Top>
       <ApiUsingFetch />
+      <LearnTypeScript
+        backgroundColor="red"
+        fontSize={30}
+        rounded={true}
+      ></LearnTypeScript>
     </div>
   );
 };
