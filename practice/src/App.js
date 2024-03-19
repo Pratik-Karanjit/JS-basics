@@ -4,6 +4,7 @@ import Child from "./AllPractice/LearnUseContext/Child";
 import Top from "./AllPractice/WithoutUseContext(Props)/Top";
 import ApiUsingFetch from "./AllPractice/ApiUsingFetch";
 import LearnTypeScript from "../src/TypeScript/LearnTypeScript.tsx";
+import Button from "./TypeScript/LearnTypeScript2.tsx";
 
 //Context for storing
 export let Context = createContext();
@@ -29,11 +30,25 @@ const App = () => {
       </Context.Provider>
       <Top></Top>
       <ApiUsingFetch />
+
+      {/* For LearnTypeScript.tsx */}
       <LearnTypeScript
         backgroundColor="red"
         fontSize={30}
         rounded={true}
       ></LearnTypeScript>
+
+      {/* For LearnTypeScript2.tsx */}
+      <Button
+        style={{
+          backgroundColor: "blue",
+          fontSize: 24,
+          color: "white",
+          padding: "1rem 2rem",
+          borderRadius: 8,
+          borderColor: 5,
+        }}
+      ></Button>
     </div>
   );
 };
