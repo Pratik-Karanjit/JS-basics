@@ -1,0 +1,8 @@
+TypeScript is a statically typed superset of JavaScript that adds optional static typing and other features to the language.
+
+1. Static Typing: TypeScript allows developers to specify types for variables, function parameters, and return values.
+   This helps catch errors in development phase rather than at runtime.
+
+2. Enhanced Readability and Maintainability: By adding type annotations, TypeScript code becomes more self-documenting and easier to understand.
+
+Easy to use with React and other components. Just add typescript template and make .tsx file.
