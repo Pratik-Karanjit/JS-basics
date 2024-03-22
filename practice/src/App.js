@@ -39,6 +39,7 @@ const App = () => {
       ></LearnTypeScript>
 
       {/* For LearnTypeScript2.tsx */}
+      {/* this sends styles as a prop itself */}
       <Button
         style={{
           backgroundColor: "blue",
