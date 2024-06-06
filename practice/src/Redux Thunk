@@ -1,0 +1,5 @@
+A middleware that provides redux functionality and can be used as a function that can be called in other pages.
+
+Helps in re usable coding.
+
+Setup may be difficult but eventually it will be fruitful and make api calls very easy to use and store in redux.
