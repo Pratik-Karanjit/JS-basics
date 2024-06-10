@@ -1,0 +1,70 @@
+npm i XLSX
+
+import * as XLSX from "XLSX";
+
+create a function which works onClick.
+for instance, attendanceData is a variable that is going to be used for extracting full name, id, email, dates and times. 
+monthName and yearName are extracted from the APIs. 
+
+
+
+  const handleExportToExcel = () => {
+    const internName = attendanceData[0]?.user_full_name;
+    const monthName = monthNames[adjustedMonth - 1];
+    const fileName = `${internName}_${monthName} ${currentYear}.xlsx`;
+
+    // Modify data to customize column headings and provide clear labels
+    const modifiedData = attendanceData.map((attendance, index) => ({
+      ID: index + 1,                                                           //Custom name as "ID" and custom indexing
+      "Full Name": attendance.user_full_name,   				//Same for this and below
+      Email: attendance.user_email,
+      "Attendance Date": attendance.attedence_date,
+      "Entry Date": attendance.entry_date,
+      "Update Date": attendance.update_date,
+      "In Time": formatTime(attendance.in_time),
+      "First Break In": formatTime(attendance.first_break_in),
+      "First Break Out": formatTime(attendance.first_break_out),
+      "Second Break In": formatTime(attendance.second_break_in),
+      "Second Break Out": formatTime(attendance.second_break_out),
+      "Out Time": formatTime(attendance.out_time),
+      "Total Working Hour": formatWorkingHours(attendance.total_working_hour),
+    }));
+
+    var wb = XLSX.utils.book_new(); 						//wb means workbook
+    var ws = XLSX.utils.json_to_sheet(modifiedData);  				//Worksheet to convert json into sheet 
+
+    ws["!cols"] = [								//giving numbered excel columns to each column so that it looks nice.
+      { wch: 1 }, // ID
+      { wch: 20 }, // Full Name
+      { wch: 35 }, // Email
+      { wch: 15 }, // Attendance Date
+      { wch: 15 }, // Entry Date
+      { wch: 15 }, // Update Date
+      { wch: 15 }, // In Time
+      { wch: 15 }, // First Break In
+      { wch: 15 }, // First Break Out
+      { wch: 15 }, // Second Break In
+      { wch: 15 }, // Second Break Out
+      { wch: 15 }, // Out Time
+      { wch: 20 }, // Total Working Hour
+    ];
+
+    // Modify column headings								//Modifying column headings and giving it names
+    ws["A1"].v = "ID";
+    ws["B1"].v = "Full Name";
+    ws["C1"].v = "Email";
+    ws["D1"].v = "Attendance Date";
+    ws["E1"].v = "Entry Date";
+    ws["F1"].v = "Update Date";
+    ws["G1"].v = "In Time";
+    ws["H1"].v = "First Break In";
+    ws["I1"].v = "First Break Out";
+    ws["J1"].v = "Second Break In";
+    ws["K1"].v = "Second Break Out";
+    ws["L1"].v = "Out Time";
+    ws["M1"].v = "Total Working Hour";
+
+    XLSX.utils.book_append_sheet(wb, ws, "MySheet1");					//Appending all
+
+    XLSX.writeFile(wb, fileName);							//Writing file to download
+  };
