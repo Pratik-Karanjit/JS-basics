@@ -1,0 +1,6 @@
+Install tailwind
+
+setup tailwind.config file
+setup postcss.config file
+
+If using vite, install tailwind for vite. THeres a separate installation for it.
