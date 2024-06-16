@@ -1,0 +1,4 @@
+Access token is used to generate the user's initial token which allows authorization and lasts for a certain amount of time. When the time runs out, the refresh token 
+is called and it acts as the new token. Replaces the access token.
+
+Refresh token stays in the redux state unless the access token expires and is invoked only at the time of need.
