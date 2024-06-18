@@ -1,0 +1,2 @@
+tailwind provides custom changes to every css while bootstrap has a fixed attribute that cannot be customized. 
+We have to use what bootstrap gives even though it maybe helpful but to meet a particular criteria of design, the tailwind has the upper hand.
