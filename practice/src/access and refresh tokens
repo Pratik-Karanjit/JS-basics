@@ -2,3 +2,6 @@ Access token is used to generate the user's initial token which allows authoriza
 is called and it acts as the new token. Replaces the access token.
 
 Refresh token stays in the redux state unless the access token expires and is invoked only at the time of need.
+
+
+Need to hit a refresh token API if new access api is needed. This hitting gives a new access token which needs to be replaced and lasts for another 30 minutes.
