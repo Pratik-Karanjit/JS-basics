@@ -1,0 +1,4 @@
+Previously, only isVerify true was being used for a single user.
+
+FOr a case of isCompleted of topics where multiple users are there, 
+we do not create a schema or model for it. Simply just return a new field in response that has isCompleted True.
