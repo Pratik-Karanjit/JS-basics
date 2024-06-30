@@ -2,7 +2,7 @@
 let fruits = ["apple", "orange", "banana", "dates"];
 
 let myFruits = (input) => {
-  input.splice(2, 2, "new fruit");
+  input.splice(2, 1, "new fruit") && input.splice(3, 1, "another");
   return input;
 };
 

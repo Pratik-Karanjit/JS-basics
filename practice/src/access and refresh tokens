@@ -1,26 +1,26 @@
-Access token is used to generate the user's initial token which allows authorization and lasts for a certain amount of time. When the time runs out, the refresh token
-is called and it acts as the new token. Replaces the access token.
+// Access token is used to generate the user's initial token which allows authorization and lasts for a certain amount of time. When the time runs out, the refresh token
+// is called and it acts as the new token. Replaces the access token.
 
-Refresh token stays in the redux state unless the access token expires and is invoked only at the time of need.
+// Refresh token stays in the redux state unless the access token expires and is invoked only at the time of need.
 
-Need to hit a refresh token API if new access api is needed. This hitting gives a new access token which needs to be replaced and lasts for another 30 minutes.
+// Need to hit a refresh token API if new access api is needed. This hitting gives a new access token which needs to be replaced and lasts for another 30 minutes.
 
-Use JWT decode package from npm to easily decode the access token. This gives the expiry time of the access token.
-Then, check the expiry time of the access token with the current time and we can know when the access token expires.
+// Use JWT decode package from npm to easily decode the access token. This gives the expiry time of the access token.
+// Then, check the expiry time of the access token with the current time and we can know when the access token expires.
 
-if (currentTime >= decodeToken.exp) {
-const refreshData = await refreshAccessToken(refreshToken);
-console.log("refresh token dataaa", refreshData);
-let accessTokenNew = refreshData?.data?.access;
-console.log("access token final", accessTokenNew);
+// if (currentTime >= decodeToken.exp) {
+// const refreshData = await refreshAccessToken(refreshToken);
+// console.log("refresh token dataaa", refreshData);
+// let accessTokenNew = refreshData?.data?.access;
+// console.log("access token final", accessTokenNew);
 
-      // Update the tokens in local storage
-      const updatedTokens = {
-        ...gettingUserInfo,
-        access: accessTokenNew,
-        refresh: refreshToken,
-      };
-      setTokensInLocalStorage(updatedTokens);
-    }
+//       // Update the tokens in local storage
+//       const updatedTokens = {
+//         ...gettingUserInfo,
+//         access: accessTokenNew,
+//         refresh: refreshToken,
+//       };
+//       setTokensInLocalStorage(updatedTokens);
+//     }
 
-Doing so will successfully refresh the access token using refresh token.
+// Doing so will successfully refresh the access token using refresh token.

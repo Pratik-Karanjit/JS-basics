@@ -3,3 +3,6 @@ let function_ = (number) => {
 };
 
 console.log(function_(3));
+
+// Ternary Operator
+// a ? b : c

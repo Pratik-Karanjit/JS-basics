@@ -1,5 +1,4 @@
-//WAP that Array empty cha bhane true else false
-let arrayLengthCheck = [];
+let arrayLengthCheck = ["Ram"];
 
 let array1 = (input) => {
   return input.length === 0 ? true : false;
