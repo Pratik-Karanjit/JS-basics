@@ -1,0 +1,51 @@
+  The following code provides a function that can be ran on button click. The function's motive is to download a zip file that contains subfolders for each department, and each department folder contains an excel file for each intern in that department. The excel file contains the intern's data such as full name, email, department, role, and total working hours for the current month.
+
+
+  
+  const handleDownloadZip = () => {
+    const zip = new JSZip();
+
+    // Group interns by department
+    const internsByDepartment = filteredInterns.reduce((acc, intern) => {
+      if (!acc[intern.department_name]) {
+        acc[intern.department_name] = [];
+      }
+      acc[intern.department_name].push(intern);
+      return acc;
+    }, {});
+
+    // Create folders for each department and add interns' files
+    Object.keys(internsByDepartment).forEach((department) => {
+      const departmentFolder = zip.folder(department);
+
+      internsByDepartment[department].forEach((intern) => {
+        const internData = [
+          ["Full Name", intern.full_name],
+          ["Email", intern.email],
+          ["Department", intern.department_name],
+          ["Role", intern.role],
+          [
+            "Total Working Hours (Current Month)",
+            intern.total_working_hours_current_month,
+          ],
+        ];
+
+        const ws = XLSX.utils.aoa_to_sheet(internData);
+        const wb = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(wb, ws, "Intern Data");
+
+        const excelBuffer = XLSX.write(wb, { bookType: "xlsx", type: "array" });
+        departmentFolder.file(`${intern.full_name}.xlsx`, excelBuffer);
+      });
+    });
+
+    zip.generateAsync({ type: "blob" }).then((content) => {
+      const currentDate = new Date();
+      const currentMonth = monthNames[currentDate.getMonth()];
+      const currentYear = currentDate.getFullYear();
+
+      const folderStructure = `${currentDepartment}-${currentMonth}-${currentYear}`;
+
+      saveAs(content, `${folderStructure}.zip`);
+    });
+  };
