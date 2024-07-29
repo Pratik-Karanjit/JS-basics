@@ -1,0 +1,142 @@
+In a case where there can be multiple departments for which excel sheets need to be generated.
+
+It is tedious to create new APIs and functions for each and creating functions for Excel can be very lengthy and time consuming.
+
+For which the following function can be used, the function takes two parameters ie departmentIdToSend and Date. This creates a possibility of 4 API Calls.
+
+1. To fetch all departments of current month
+
+2. To fetch particular department using department ID
+
+3. To fetch all departments of particular month.
+
+4. To fetch both department and month according to department id and given month.
+
+Finally, the function takes the response and does all the mapping work to create a workbook and worksheet where the data is mapped and stored.
+
+ <!-- const handleDownloadZip = async (departmentIdToSend, date) => {
+    console.log("department id inside download zip", departmentIdToSend);
+    console.log("department date inside download zip", date);
+    let url = `${BASE_BACKEND}/attendance_by_department/`;
+
+    // Add query parameters based on available parameters
+    if (departmentIdToSend && date) {
+      url += `?department_id=${departmentIdToSend}&date=${date}`;
+    } else if (departmentIdToSend) {
+      url += `?department_id=${departmentIdToSend}`;
+    } else if (date) {
+      url += `?date=${date}`;
+    }
+
+    // Fetch data from the constructed URL
+    const response = await axios.get(url);
+    console.log("Response for all details of department", response);
+
+    const responseData = response.data;
+
+    const mappingResponse = responseData.map((department) => {
+      return department.users;
+    });
+    console.log("mapping response", mappingResponse);
+
+    const mappingAttendanceAndUser = mappingResponse.flatMap(
+      (departmentArray) =>
+        departmentArray.map((item) => ({
+          attendance: item.attendance,
+          user: item.user,
+        }))
+    );
+
+    console.log("mappingAttendanceAndUser", mappingAttendanceAndUser);
+
+    const zip = new JSZip();
+
+    // Group interns by department
+    const internsByDepartment = mappingAttendanceAndUser.reduce(
+      (acc, intern) => {
+        if (!acc[intern?.user?.department_name]) {
+          acc[intern.user?.department_name] = [];
+        }
+        acc[intern.user?.department_name].push(intern);
+        return acc;
+      },
+      {}
+    );
+
+    // Create folders for each department and add interns' files
+    Object.keys(internsByDepartment).forEach((department) => {
+      const departmentFolder = zip.folder(department);
+
+      internsByDepartment[department].forEach((intern, index) => {
+        const userData = intern.user;
+        const attendanceData = intern.attendance;
+
+        const internData = [
+          ["Full Name", userData.full_name],
+          ["Email", userData.email],
+          ["Department", userData.department_name],
+          ["Role", userData.role],
+          [], // Empty line for separation
+          [
+            "Attendance Date",
+            "Entry Date",
+            "In Time",
+            "First Break In",
+            "First Break Out",
+            "Second Break In",
+            "Second Break Out",
+            "Out Time",
+            "Total Working Hour",
+            "Total Amount",
+          ],
+          ...attendanceData.map((att) => [
+            att.attedence_date,
+            att.entry_date,
+            formatTime(att.in_time),
+            formatTime(att.first_break_in ? att.first_break_in : "- - -"),
+            formatTime(att.first_break_out ? att.first_break_out : "- - -"),
+            formatTime(att.second_break_in ? att.second_break_in : "- - -"),
+            formatTime(att.second_break_out ? att.second_break_out : "- - -"),
+            formatTime(att.out_time),
+            formatWorkingHours(att.total_working_hour),
+            att.total_amount,
+          ]),
+        ];
+
+        const ws = XLSX.utils.aoa_to_sheet(internData);
+
+        // Set column widths
+        const columnWidths = [
+          { wch: 20 }, // Full Name
+          { wch: 30 }, // Email
+          { wch: 20 }, // Department
+          { wch: 20 }, // Role
+          { wch: 20 }, // Attendance Date
+          { wch: 15 }, // Entry Date
+          { wch: 15 }, // In Time
+          { wch: 15 }, // Out Time
+          { wch: 20 }, // Total Working Hour
+          { wch: 15 }, // Total Amount
+        ];
+        ws["!cols"] = columnWidths;
+
+        const wb = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(wb, ws, "Intern Data");
+
+        const excelBuffer = XLSX.write(wb, { bookType: "xlsx", type: "array" });
+        departmentFolder.file(`${userData.full_name}.xlsx`, excelBuffer);
+      });
+    });
+
+    zip.generateAsync({ type: "blob" }).then((content) => {
+      const currentDate = new Date();
+      const currentMonth = monthNames[currentDate.getMonth()];
+      const currentYear = currentDate.getFullYear();
+
+      const folderStructure = date
+        ? `${currentDepartment}-${date}`
+        : `${currentDepartment}-${currentMonth}-${currentYear}`;
+
+      saveAs(content, `${folderStructure}.zip`);
+    });
+  }; -->
