@@ -1,0 +1,12 @@
+// This uses the tailwind compiler and can work effectively just by calling the variable name.
+
+const color = "bg-color-red";
+
+<div className={color}></div>;
+
+//Another example
+
+const isActive = true;
+const buttonClass = isActive ? "bg-green-500" : "bg-red-500";
+
+<button className={`${buttonClass} text-white p-2 rounded`}>Click me</button>;
