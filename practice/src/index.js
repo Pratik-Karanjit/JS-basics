@@ -2,14 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import App from "./App";
-import Try from "./AllPractice/Try";
+import PaymentComponent from "./AllPractice/PaymentComponent";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Try />
+    <PaymentComponent />
     {/* <PalindromeChecker></PalindromeChecker> */}
     {/* <ApiUsingAsyncAwait /> */}
     {/* <ApiUsingFetch /> */}
