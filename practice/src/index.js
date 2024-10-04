@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import PaymentComponent from "./AllPractice/PaymentComponent";
+import PdfReader from "./PdfReader.js";
+import { app, analytics } from "./firebase";
+import NotificationComponent from "./NotificationComponent.js";
+import ServiceWorkerRegistration from "./ServiceWorkerRegistration.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <PaymentComponent />
+    {/* <PaymentComponent /> */}
+
+    {/* <PdfReader /> */}
+
+    <ServiceWorkerRegistration />
+
+    <NotificationComponent />
+
     {/* <PalindromeChecker></PalindromeChecker> */}
     {/* <ApiUsingAsyncAwait /> */}
     {/* <ApiUsingFetch /> */}
