@@ -122,6 +122,8 @@ app.use((req, res, next) => {
 app.post("/send-notification", async (req, res) => {
   const { token, notificationTitle, notificationBody } = req.body;
 
+  console.log("req.body", req.body);
+
   const message = {
     notification: {
       title: notificationTitle,

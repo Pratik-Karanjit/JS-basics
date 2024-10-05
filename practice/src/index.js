@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import PdfReader from "./PdfReader.js";
-import { app, analytics } from "./firebase";
 import NotificationComponent from "./NotificationComponent.js";
 import ServiceWorkerRegistration from "./ServiceWorkerRegistration.js";
 

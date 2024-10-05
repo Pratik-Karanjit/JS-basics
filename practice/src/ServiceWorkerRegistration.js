@@ -6,11 +6,13 @@ const ServiceWorkerRegistration = () => {
       if ("serviceWorker" in navigator) {
         try {
           const registration = await navigator.serviceWorker.register(
-            "/sw.js",
+            "/firebase-messaging-sw.js", // Use the correct filename
             {
-              scope: "/", // Adjust as necessary
+              type: "module", // Specify type as module for ES modules
+              scope: "/firebase-cloud-messaging-push-scope/",
             }
           );
+
           console.log(
             "Service worker registered with scope:",
             registration.scope

@@ -1,18 +1,32 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { requestForNotificationPermission } from "./firebase.js";
+import {
+  requestForNotificationPermission,
+  listenForMessages,
+} from "./firebase.js";
 
 const NotificationComponent = () => {
   const [notificationTitle, setNotificationTitle] = useState("");
   const [notificationBody, setNotificationBody] = useState("");
   const [fcmToken, setFcmToken] = useState("");
+  const [notifications, setNotifications] = useState([]);
 
   useEffect(() => {
     const fetchToken = async () => {
       const token = await requestForNotificationPermission();
       setFcmToken(token);
+      console.log("token************", token);
     };
+
     fetchToken();
+
+    // Listen for incoming messages
+    listenForMessages((notification) => {
+      setNotifications((prevNotifications) => [
+        ...prevNotifications,
+        notification,
+      ]);
+    });
   }, []);
 
   const sendNotification = async () => {
@@ -47,6 +61,16 @@ const NotificationComponent = () => {
         onChange={(e) => setNotificationBody(e.target.value)}
       />
       <button onClick={sendNotification}>Send Notification</button>
+
+      {/* Display received notifications */}
+      <div>
+        <h3>Received Notifications:</h3>
+        {notifications.map((notification, index) => (
+          <div key={index}>
+            <strong>{notification?.title}</strong>: {notification?.body}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
