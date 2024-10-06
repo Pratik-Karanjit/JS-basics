@@ -1,0 +1,283 @@
+[33mcommit e06c94dba4509944a928f5794fd4a6409ffd98ec[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Sat Oct 5 12:13:44 2024 +0545
+
+    add notification
+
+[33mcommit 5269bcc9926308293719b89f19adf5a17f1466cd[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Sat Oct 5 12:11:56 2024 +0545
+
+    add notification
+
+[33mcommit d4de7e7ea8e6ca22456d1df67822540a2529983c[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Fri Oct 4 22:21:56 2024 +0545
+
+    learning firebase in-app messaging feature
+
+[33mcommit b8c54c99c913f922901f4be8543e61f338b0d291[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Fri Oct 4 22:21:10 2024 +0545
+
+    learning firebase in-app messaging feature
+
+[33mcommit ca0b6f9fa007c77e870866b96ba77373855fb34c[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Wed Sep 25 16:46:27 2024 +0545
+
+    add stripe payment integration
+
+[33mcommit 2c59cebe0e2674601d7bf6cd2813700b66a17a9f[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Tue Sep 10 21:44:44 2024 +0545
+
+    setup express backend and DB connection
+
+[33mcommit 2c78e9a2a2f12f5dbabb1ed5d9a654e04f2df64f[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Sun Aug 25 14:58:21 2024 +0545
+
+    add flowchart for access and refresh token logic
+
+[33mcommit 358ef6cffc49ec0cd304f55739b15350dfb7ff44[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Thu Aug 22 15:08:24 2024 +0545
+
+    add AI
+
+[33mcommit 797530dc7e8e27f5c98aea8857ef09badd0aebde[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Mon Aug 19 13:16:23 2024 +0545
+
+    tailwind
+
+[33mcommit 5ff063a3b93eb47cddef03485495259aa784c69d[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Mon Jul 29 21:56:39 2024 +0545
+
+    add multiple API calls for zip download
+
+[33mcommit e7e30c4799dfe7c3551f3e16e484a0625376d978[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Sun Jul 28 12:33:51 2024 +0545
+
+    download zip and sub folder in react
+
+[33mcommit c81e53afa8696ac5cd9a834f8550ecf40a421486[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Mon Jul 15 18:26:25 2024 +0545
+
+    add toSpliced method of Array in JS
+
+[33mcommit 175373057be7aec4b477141de55677362d1b1461[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Sun Jul 7 19:54:13 2024 +0545
+
+    add ngrok
+
+[33mcommit 7eb989d25ea06dac4c34feaedafe87f887828e51[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Sun Jun 30 17:38:27 2024 +0545
+
+    add multiple concepts
+
+[33mcommit 34c462959c8077cb02865742b2a6633523b1525f[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Fri Jun 28 17:45:30 2024 +0545
+
+    add isCompleted
+
+[33mcommit 6b081e44c4193e1aa71ba6a2a681a08bd14ff9cd[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Thu Jun 27 16:17:46 2024 +0545
+
+    add
+
+[33mcommit 65e82ba96d4b30f4927dc32fa3fc9fe312eb5683[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Mon Jun 24 16:55:32 2024 +0545
+
+    add access and refresh tokens
+
+[33mcommit 8680c85e6195a9764d031cb550effa51d4426b78[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Tue Jun 18 16:39:19 2024 +0545
+
+    add notes
+
+[33mcommit 49597748529009aae83239c4c8a4a39fa7d81722[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Sun Jun 16 16:53:09 2024 +0545
+
+    add new notes
+
+[33mcommit 24d4e01e27dc6f1a22502b1aaeb66b7d872d6756[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Wed Jun 12 17:59:14 2024 +0545
+
+    add tailwind setups
+
+[33mcommit a06b0be110fe9565feaf8fbc0775d72bba8b6afc[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Mon Jun 10 15:47:00 2024 +0545
+
+    add notes
+
+[33mcommit a584c43e547c92329558e240320ca5ef72a02d94[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Thu Jun 6 14:29:02 2024 +0545
+
+    add my notes
+
+[33mcommit 37abfb53ba58162cd784b656e132d0a7acba4d6b[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Wed Mar 27 21:36:50 2024 +0545
+
+    add Some.js
+
+[33mcommit c67a98ed8cff3d197946a3ffdfb0057991de8201[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Fri Mar 22 20:59:08 2024 +0545
+
+    add map
+
+[33mcommit bead263afa61c827e3b85c0c1e00f7729918b78e[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Wed Mar 20 19:27:55 2024 +0545
+
+    add typescript
+
+[33mcommit 4280b16b317de7a1f909edef01ac85a28877262e[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Tue Mar 19 19:24:37 2024 +0545
+
+    add typeScript2 file
+
+[33mcommit 4839451093c8c676adc37f6ce17b90d7bdf07a92[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Mon Mar 18 10:16:50 2024 +0545
+
+    add typescript
+
+[33mcommit 9a7d114df6792e9bfb1081edfe65f3e6fd8e1562[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Sun Mar 17 19:48:37 2024 +0545
+
+    add map vs for each
+
+[33mcommit 0bf5ec70c0420120b73e80dc1464eb4853e31346[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Fri Mar 15 22:08:18 2024 +0545
+
+    add interview que
+
+[33mcommit 58804d1aba4352b0448361456821eb0f95e84cdd[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Wed Mar 6 21:30:40 2024 +0545
+
+    scope
+
+[33mcommit e1dbf937a990eb740988da8ae412f868152a2ee8[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Tue Mar 5 20:05:54 2024 +0545
+
+    prop drilling
+
+[33mcommit b57a37aabb547fe10e01adff6f5c7ab583491bca[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Mon Mar 4 17:36:39 2024 +0545
+
+    virtual dom
+
+[33mcommit 286365f92fe0520db2da1b89d7f23ca8fdead97e[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Sun Mar 3 20:36:02 2024 +0545
+
+    add
+
+[33mcommit 5d480af2f2c73f0e75c28c1b25e536f5e15720d4[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Fri Mar 1 15:18:11 2024 +0545
+
+    interview practice
+
+[33mcommit 8f0b05c3190460ce6411e9f9a4313a47811b4664[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Thu Feb 29 21:50:05 2024 +0545
+
+    add comments
+
+[33mcommit 6642275f4839eb5439e6535f746043813a4d390b[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Wed Feb 28 15:02:35 2024 +0545
+
+    add comments
+
+[33mcommit 604c59984a578607829d4d54af7ddceb1cf67996[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Sun Feb 25 21:51:19 2024 +0545
+
+    add comments
+
+[33mcommit cf74b18936077802f6ca6f065cb4e4d358a82aca[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Wed Feb 21 17:52:14 2024 +0545
+
+    add interview questions
+
+[33mcommit 7476e42ffd42bfd8ca169c1ad0c02b6527bd739f[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Mon Feb 19 10:11:31 2024 +0545
+
+    new interview questions
+
+[33mcommit 28b4c90639cc807434a3bbd6a39f9f4dab5ee8e7[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Sun Feb 18 13:44:47 2024 +0545
+
+    add new topics
+
+[33mcommit 4b012f074229b8de928a3abfae99a1f676bd8f14[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Sat Feb 17 22:27:48 2024 +0545
+
+    add new topics
+
+[33mcommit 07a1e676efd082fee3bdf2de8e18f4805f7bbab8[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Fri Feb 16 17:33:05 2024 +0545
+
+    Add interview questions
+
+[33mcommit 33b88efcda34ef347a9e72da8fad5da00e8bc449[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Fri Feb 16 11:24:48 2024 +0545
+
+    Add slice and splice questions
+
+[33mcommit ba073eb0d32a771329a62d48151599fa5f9bc143[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Thu Feb 15 17:33:39 2024 +0545
+
+    Add interview solutions
+
+[33mcommit a1f7137349f5c0952fec5ff1d229eae220c6b518[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Thu Feb 15 11:19:42 2024 +0545
+
+    chore: interview practices
+
+[33mcommit ce8404caf7cd24fea7079bca2305cb022547b89a[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Thu Feb 15 10:27:15 2024 +0545
+
+    chore:interview ques
+
+[33mcommit f70a98654d26bd1b7d6bd2fdde2438086611c98f[m
+Author: Pratik Karanjit <pratikkaranjit@gmail.com>
+Date:   Wed Feb 14 17:46:32 2024 +0545
+
+    chore:interview ques
+
+[33mcommit 7abd3a831
